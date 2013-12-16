@@ -80,6 +80,8 @@ module Requirejs::Rails
         pragmasOnSave
         preserveLicenseComments
         shim
+        skipDirOptimize
+        normalizeDirDefines
         skipModuleInsertion
         skipPragmas
         uglify

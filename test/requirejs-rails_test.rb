@@ -75,6 +75,16 @@ class RequirejsRailsConfigTest < ActiveSupport::TestCase
     assert_equal 'lib/jquery-1.7.2.min', @cfg.build_config['paths']['jquery']
   end
 
+  test "build_config should allow 'skipDirOptimize' prop" do
+    @cfg.user_config = { 'skipDirOptimize' => true }
+    assert_equal true, @cfg.build_config['skipDirOptimize']
+  end
+
+  test "build_config should allow 'normalizeDirDefines' prop" do
+    @cfg.user_config = { 'normalizeDirDefines' => 'skip' }
+    assert_equal 'skip', @cfg.build_config['normalizeDirDefines']
+  end
+
   test "run_config should reject irrelevant settings" do
     @cfg.user_config = { 'optimize' => 'none' }
     assert_nil @cfg.run_config['optimize'] 
