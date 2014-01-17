@@ -7,8 +7,8 @@ require "requirejs/rails/version"
 Gem::Specification.new do |s|
   s.name        = "requirejs-rails"
   s.version     = Requirejs::Rails::Version
-  s.authors     = ["John Whitley"]
-  s.email       = ["whitley@bangpath.org"]
+  s.authors     = ['John Whitley', 'Bogumil Wrona']
+  s.email       = ['whitley@bangpath.org', 'b.wrona@cre8newmedia.com']
   s.homepage    = "http://github.com/jwhitley/requirejs-rails"
   s.summary     = "Use RequireJS with the Rails 3 Asset Pipeline"
   s.description = "This gem provides RequireJS support for your Rails 3 application."

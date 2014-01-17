@@ -1,6 +1,13 @@
 <!--
 Marked Style: GitHub
 -->
+
+# v1.0.0
+
+- Updated to to require.js \ r.js 2.1.10, and almond 0.2.6
+- That version is based on few changes implemented in different forks
+
+
 # v0.9.1
 
 - Updated to to require.js \ r.js 2.1.2, and almond 0.2.3
