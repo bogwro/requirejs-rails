@@ -27,8 +27,8 @@ var errback = function(error) {
 }
 
 module_specs.forEach(function(module) {
-    process.stderr.write("Optimizing " + module.name);
+    process.stderr.write("\n\nOptimizing " + module.name + "\n\n");
     requirejs.optimize(mix(module), function(buildResponse) {
-        process.stderr.write("Done: " + mix(module).out);
+        process.stderr.write("\n\nDone: " + mix(module).out + "\n\n");
     }, errback);
 });
